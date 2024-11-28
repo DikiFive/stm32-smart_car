@@ -1,0 +1,1 @@
+-c --apcs=interwork -I. -IStart -IUser -ILibrary -IHardware -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD --cpu Cortex-M3 --li --c99 -O0 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o ".\build\Target 1\.obj\Library\stm32f10x_dbgmcu.o" --no_depend_system_headers --depend ".\build\Target 1\.obj\Library\stm32f10x_dbgmcu.d" .\Library\stm32f10x_dbgmcu.c

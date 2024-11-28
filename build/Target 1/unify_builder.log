@@ -1,0 +1,156 @@
+[2024-11-27 16:46:37]	[info] incremental build: 41 source files changed
+These source files will be recompiled
+---
+'d:\desktop\32实训\小车\Hardware\Delay.c': object (.o) file not exist
+'d:\desktop\32实训\小车\Hardware\Key.c': object (.o) file not exist
+'d:\desktop\32实训\小车\Hardware\LED.c': object (.o) file not exist
+'d:\desktop\32实训\小车\Hardware\Motor.c': object (.o) file not exist
+'d:\desktop\32实训\小车\Hardware\OLED.c': object (.o) file not exist
+'d:\desktop\32实训\小车\Hardware\PWM.c': object (.o) file not exist
+'d:\desktop\32实训\小车\Hardware\RED.c': object (.o) file not exist
+'d:\desktop\32实训\小车\Hardware\SR04.c': object (.o) file not exist
+'d:\desktop\32实训\小车\Hardware\Serial.c': object (.o) file not exist
+'d:\desktop\32实训\小车\Hardware\Servo.c': object (.o) file not exist
+'d:\desktop\32实训\小车\Hardware\Timer.c': object (.o) file not exist
+'d:\desktop\32实训\小车\Hardware\dk.c': object (.o) file not exist
+'d:\desktop\32实训\小车\Hardware\track.c': object (.o) file not exist
+'d:\desktop\32实训\小车\Library\misc.c': object (.o) file not exist
+'d:\desktop\32实训\小车\Library\stm32f10x_adc.c': object (.o) file not exist
+'d:\desktop\32实训\小车\Library\stm32f10x_bkp.c': object (.o) file not exist
+'d:\desktop\32实训\小车\Library\stm32f10x_can.c': object (.o) file not exist
+'d:\desktop\32实训\小车\Library\stm32f10x_cec.c': object (.o) file not exist
+'d:\desktop\32实训\小车\Library\stm32f10x_crc.c': object (.o) file not exist
+'d:\desktop\32实训\小车\Library\stm32f10x_dac.c': object (.o) file not exist
+'d:\desktop\32实训\小车\Library\stm32f10x_dbgmcu.c': object (.o) file not exist
+'d:\desktop\32实训\小车\Library\stm32f10x_dma.c': object (.o) file not exist
+'d:\desktop\32实训\小车\Library\stm32f10x_exti.c': object (.o) file not exist
+'d:\desktop\32实训\小车\Library\stm32f10x_flash.c': object (.o) file not exist
+'d:\desktop\32实训\小车\Library\stm32f10x_fsmc.c': object (.o) file not exist
+'d:\desktop\32实训\小车\Library\stm32f10x_gpio.c': object (.o) file not exist
+'d:\desktop\32实训\小车\Library\stm32f10x_i2c.c': object (.o) file not exist
+'d:\desktop\32实训\小车\Library\stm32f10x_iwdg.c': object (.o) file not exist
+'d:\desktop\32实训\小车\Library\stm32f10x_pwr.c': object (.o) file not exist
+'d:\desktop\32实训\小车\Library\stm32f10x_rcc.c': object (.o) file not exist
+'d:\desktop\32实训\小车\Library\stm32f10x_rtc.c': object (.o) file not exist
+'d:\desktop\32实训\小车\Library\stm32f10x_sdio.c': object (.o) file not exist
+'d:\desktop\32实训\小车\Library\stm32f10x_spi.c': object (.o) file not exist
+'d:\desktop\32实训\小车\Library\stm32f10x_tim.c': object (.o) file not exist
+'d:\desktop\32实训\小车\Library\stm32f10x_usart.c': object (.o) file not exist
+'d:\desktop\32实训\小车\Library\stm32f10x_wwdg.c': object (.o) file not exist
+'d:\desktop\32实训\小车\Start\core_cm3.c': object (.o) file not exist
+'d:\desktop\32实训\小车\Start\startup_stm32f10x_md.s': object (.o) file not exist
+'d:\desktop\32实训\小车\Start\system_stm32f10x.c': object (.o) file not exist
+'d:\desktop\32实训\小车\User\main.c': object (.o) file not exist
+'d:\desktop\32实训\小车\User\stm32f10x_it.c': object (.o) file not exist
+
+[2024-11-27 16:46:39]	[done]
+	build successfully !
+
+[2024-11-27 16:47:58]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\desktop\32实训\小车\User\main.c': source file has been changed.
+
+[2024-11-27 16:47:59]	[done]
+	build successfully !
+
+[2024-11-27 16:48:31]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\desktop\32实训\小车\User\main.c': source file has been changed.
+
+[2024-11-27 16:48:32]	[done]
+	build successfully !
+
+[2024-11-27 16:51:15]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\desktop\32实训\小车\User\main.c': source file has been changed.
+
+[2024-11-27 16:51:16]	[done]
+	build successfully !
+
+[2024-11-27 16:52:37]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\desktop\32实训\小车\User\main.c': source file has been changed.
+
+[2024-11-27 16:52:37]	[done]
+	build successfully !
+
+[2024-11-27 16:53:42]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\desktop\32实训\小车\User\main.c': source file has been changed.
+
+[2024-11-27 16:53:43]	[done]
+	build successfully !
+
+[2024-11-27 16:54:28]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\desktop\32实训\小车\User\main.c': source file has been changed.
+
+[2024-11-27 16:54:28]	[done]
+	build successfully !
+
+[2024-11-27 16:54:49]	[done]
+	build successfully !
+
+[2024-11-27 16:55:38]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\desktop\32实训\小车\User\main.c': source file has been changed.
+
+[2024-11-27 16:55:38]	[done]
+	build successfully !
+
+[2024-11-27 16:56:59]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\desktop\32实训\小车\User\main.c': source file has been changed.
+
+[2024-11-27 16:56:59]	[done]
+	build successfully !
+
+[2024-11-27 17:04:28]	[done]
+	build successfully !
+
+[2024-11-27 17:06:01]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\desktop\32实训\小车\User\main.c': source file has been changed.
+
+[2024-11-27 17:06:02]	[done]
+	build successfully !
+
+[2024-11-27 17:10:33]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\desktop\32实训\小车\User\main.c': source file has been changed.
+
+[2024-11-27 17:10:34]	[done]
+	build successfully !
+
+[2024-11-27 17:19:08]	[info] incremental build: 7 source files changed
+These source files will be recompiled
+---
+'d:\desktop\32实训\小车\Hardware\Motor.c': dependence 'd:\desktop\32实训\小车\Hardware\RED.h' has been changed.
+'d:\desktop\32实训\小车\Hardware\RED.c': source file has been changed.
+'d:\desktop\32实训\小车\Hardware\SR04.c': dependence 'd:\desktop\32实训\小车\Hardware\RED.h' has been changed.
+'d:\desktop\32实训\小车\Hardware\Serial.c': dependence 'd:\desktop\32实训\小车\Hardware\RED.h' has been changed.
+'d:\desktop\32实训\小车\Hardware\dk.c': source file has been changed.
+'d:\desktop\32实训\小车\Hardware\track.c': dependence 'd:\desktop\32实训\小车\Hardware\RED.h' has been changed.
+'d:\desktop\32实训\小车\User\main.c': source file has been changed.
+
+[2024-11-27 17:19:10]	[done]
+	build successfully !
+
+[2024-11-27 17:20:31]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\desktop\32实训\小车\User\main.c': source file has been changed.
+
+[2024-11-27 17:20:31]	[done]
+	build successfully !
+
