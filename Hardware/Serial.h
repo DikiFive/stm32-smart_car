@@ -4,6 +4,7 @@
 #include "dk.h"
 
 extern volatile uint8_t avoid_flag;
+extern volatile uint8_t avoid_sflag;
 
 void Serial_Init(void);
 void Serial_SendByte(uint8_t Byte);

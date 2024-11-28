@@ -16,14 +16,14 @@ void INFRARED_Init(void)
     // 配置GPIO口为上拉输入模式，用于接收红外信号
     GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPU;
     // 指定配置PIN脚
-    GPIO_InitStructure.GPIO_Pin = INFRARED_L_PIN;
+    GPIO_InitStructure.GPIO_Pin = INFRARED_R_PIN;
     // 设置GPIO的速度为50MHz
     GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
     // 根据上述配置初始化GPIOA
     GPIO_Init(GPIOA, &GPIO_InitStructure);
 
     // 指定配置PIN脚
-    GPIO_InitStructure.GPIO_Pin = INFRARED_R_PIN;
+    GPIO_InitStructure.GPIO_Pin = INFRARED_L_PIN;
     // 根据上述配置初始化GPIOB
     GPIO_Init(GPIOB, &GPIO_InitStructure);
 }
@@ -35,8 +35,8 @@ InfraredStatus INFRARED_Get(void)
 {
     InfraredStatus status;
     // 读取GPIOA的PIN11脚的状态
-    status.left = GPIO_ReadInputDataBit(GPIOA, INFRARED_L_PIN);
+    status.left = GPIO_ReadInputDataBit(GPIOB, INFRARED_L_PIN);
     // 读取GPIOB的PIN10脚的状态
-    status.right = GPIO_ReadInputDataBit(GPIOB, INFRARED_R_PIN);
+    status.right = GPIO_ReadInputDataBit(GPIOA, INFRARED_R_PIN);
     return status;
 }

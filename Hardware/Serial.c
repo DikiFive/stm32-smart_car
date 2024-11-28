@@ -26,6 +26,7 @@ volatile Packet packet;
 volatile uint8_t packet_index    = 0;
 volatile uint8_t packet_received = 0;
 volatile uint8_t avoid_flag      = 0;
+volatile uint8_t avoid_sflag     = 0;
 
 // 定义接收状态
 typedef enum {
@@ -368,9 +369,14 @@ void ProcessReceivedPacket(void)
                 avoid_flag = 1; // 进入避免模式
                 break;
 
+            case 7:
+                avoid_sflag = 1;
+                break;
+
             case 0:
                 car_stop();
-                avoid_flag = 0; // 退出避免模式
+                avoid_flag  = 0; // 退出避免模式
+                avoid_sflag = 0;
                 break;
         }
 

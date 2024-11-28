@@ -11,6 +11,7 @@
 
 #include "stm32f10x.h" // 包含STM32F10x系列微控制器的头文件
 #include "stdio.h"     // 包含标准输入输出库的头文件
+#include "stdlib.h"    // 包含标准库的头文件
 #include <stdarg.h>    // 包含可变参数头文件
 #include "Delay.h"     // 包含延迟函数模块的头文件
 #include "Key.h"       // 包含按键模块的头文件

@@ -1,9 +1,13 @@
 >>> cc
 
-".\User\main.c", line 8: Warning:  #177-D: variable "Distance_mm" was declared but never referenced
-      int Distance_mm = 0; // 获取距离测量结果，单位毫米（mm�?          ^
-.\User\main.c: 1 warning, 0 errors
+".\Hardware\Motor.c", line 52: Warning:  #940-D: missing return statement at end of non-void function "left_control"
+  }
+  ^
+".\Hardware\Motor.c", line 79: Warning:  #940-D: missing return statement at end of non-void function "right_control"
+  }
+  ^
+.\Hardware\Motor.c: 2 warnings, 0 errors
 
 >>> ld
 
-Program Size: Code=3204 RO-data=268 RW-data=44 ZI-data=1700  
+Program Size: Code=4428 RO-data=268 RW-data=52 ZI-data=1932  

@@ -1,6 +1,0 @@
-r
-halt
-loadfile "d:\desktop\32สตัต\ะกณต\build\Target 1\Project.hex"
-r
-go
-exit
