@@ -28,11 +28,12 @@ int main(void)
         // 获取红外线传感器的左右读数
         lred = INFRARED_Get().left;
         rred = INFRARED_Get().right;
-        // 处理接收到的数据包
-        ProcessReceivedPacket();
 
         // 更新距离测量值
         Distance_mm = sonar_mm();
+
+        // 处理接收到的数据包
+        ProcessReceivedPacket();
 
         avoid_SR04();
         avoid_Infrared();
