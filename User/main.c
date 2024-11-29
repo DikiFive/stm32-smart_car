@@ -1,6 +1,7 @@
 #include "dk.h"
 
-#define DISTANCE_THRESHOLD 125
+#define DISTANCE_THRESHOLD 200
+#define delay_time         500
 
 int Distance_mm = 0; // 获取距离测量结果，单位毫米（mm）
 uint8_t lred;
@@ -15,6 +16,8 @@ void avoid_SR04(void);
  * 使用红外线传感器进行避障
  */
 void avoid_Infrared(void);
+
+void test_avoid(void);
 
 /**
  * 主函数入口
@@ -35,6 +38,8 @@ int main(void)
         // 处理接收到的数据包
         ProcessReceivedPacket();
 
+        // test_avoid();
+
         avoid_SR04();
         avoid_Infrared();
     }
@@ -46,7 +51,7 @@ int main(void)
 void avoid_Infrared(void)
 {
     // 根据障碍物 avoidance 标志和距离判断是否需要避障
-    if (avoid_flag == 1) {
+    if (avoid_sflag == 1) {
         if (Distance_mm > DISTANCE_THRESHOLD) {
             // 如果距离大于阈值，继续前进
             car_go();
@@ -55,24 +60,24 @@ void avoid_Infrared(void)
             if (lred == 1) {
                 // 如果左侧检测到障碍物，向左转
                 car_left();
-                Delay_ms(200);
+                Delay_ms(delay_time);
                 car_go();
             } else if (rred == 1) {
                 // 如果右侧检测到障碍物，向右转
                 car_right();
-                Delay_ms(200);
+                Delay_ms(delay_time);
                 car_go();
             } else {
                 // 如果两侧都未检测到障碍物，后退并随机选择方向
                 car_back();
-                Delay_ms(200);
+                Delay_ms(delay_time);
                 // 随机选择左转或右转
                 if (rand() % 2 == 0) {
                     car_left();
                 } else {
                     car_right();
                 }
-                Delay_ms(200);
+                Delay_ms(delay_time);
                 car_go();
             }
         }
@@ -84,19 +89,42 @@ void avoid_Infrared(void)
  */
 void avoid_SR04(void)
 {
-    if (avoid_sflag == 1) {
+    if (avoid_flag == 1) {
         if (Distance_mm > DISTANCE_THRESHOLD) {
             car_go();
         } else {
             car_back();
-            Delay_ms(200);
+            Delay_ms(delay_time);
             // 随机选择左转或右转
             if (rand() % 2 == 0) {
                 car_left();
             } else {
                 car_right();
             }
-            Delay_ms(200);
+            Delay_ms(delay_time);
+            car_go();
+        }
+    }
+}
+
+void test_avoid(void)
+{
+    if (avoid_sflag == 1) {
+        if (Distance_mm > DISTANCE_THRESHOLD) {
+            // 如果距离大于阈值，继续前进
+            car_go();
+        } else {
+            car_stop();
+        }
+    }
+    if (avoid_flag == 1) {
+        if (lred == 0) {
+            car_right();
+        }
+        if (rred == 0) {
+            car_left();
+        }
+        if (lred == 1 && rred == 1) {
             car_go();
         }
     }
